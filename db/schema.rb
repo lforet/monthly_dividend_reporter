@@ -12,10 +12,14 @@
 ActiveRecord::Schema.define(:version => 20100628204036) do
 
   create_table "quotes", :force => true do |t|
-    t.string "ticker"
-    t.string "name"
-    t.float  "dividend"
-    t.date   "exdate"
+    t.string   "ticker"
+    t.string   "name"
+    t.float    "dividend"
+    t.date     "exdate"
+    t.float    "dividend_per_share"
+    t.float    "last_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

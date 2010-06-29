@@ -5,6 +5,9 @@ class CreateQuotes < ActiveRecord::Migration
       t.column "name", :string
       t.column "dividend", :float
       t.column "exdate", :date
+      t.column "dividend_per_share", :float
+      t.column "last_price", :float
+      t.timestamps
     end
   end
 
